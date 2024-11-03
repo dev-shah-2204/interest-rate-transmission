@@ -1,0 +1,5 @@
+*.__pycache__
+__pycache__
+test.py
+app/static/test.html
+app/static/test2.html
