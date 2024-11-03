@@ -36,9 +36,7 @@ def home():
             correlation_matrix = bayesnet.get_correlation_matrix()
             correlation_matrix_table = correlation_matrix.to_html(classes="table table-striped", index=False)
 
-
         return render_template('index.html', is_stationary=is_stationary, show_res=True, adf_table=adf_result_table, correlation_matrix_table=correlation_matrix_table)
-
 
     return render_template('index.html', show_res=False)
 
