@@ -4,3 +4,6 @@ test.py
 app/static/templates/test.html
 app/static/templates/test2.html
 .idea
+app/22.csv
+app/24.csv
+app/static/images/*
