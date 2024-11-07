@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, request
-from . import bayesnet22 as bayesnet
+from . import bayesnet
 
 views = Blueprint("views", __name__)
 
