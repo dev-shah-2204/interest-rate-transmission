@@ -24,6 +24,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/about">About</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://drive.google.com/file/d/1i4_nSLdjDsN3v2C9XrtV2px3DA2bnJfc/view?usp=sharing">Download Dataset</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -53,9 +56,9 @@
 
         {% if is_stationary and show_res %}
             <div class="output-block test-results">
-                <h4>Data is now stationary</h4>
+                <h4>Results after performing ADF test on same data after First Order Differencing</h4>
                 {{ adf_table | safe }}
-                <h4>Cointegration test results:</h4>
+                <h4>Results after performing Cointegration test</h4>
                 {{ correlation_matrix_table | safe }}
             </div>
 
@@ -74,9 +77,8 @@
         {% elif not is_stationary and show_res %}
             <div class="output-block test-results">
 {#                {% if table %}#}
+                <h4>Inital results of running Augmented Dickey-Fuller test on data for {{ date_range }}</h4>
                 {{ adf_table | safe }}
-{#                {% endif %}#}
-                <p>Data for {{ date_range }} is not stationary, running Augmented Dickey-Fuller test and First Order Differencing</p>
             </div>
             
             <form action="/" method="POST">
