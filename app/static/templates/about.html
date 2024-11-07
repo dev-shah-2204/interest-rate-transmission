@@ -1,59 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Simplified Bayesian Network Analysis Dashboard">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="static/styles/main.css">
-        <title>Bayesian Network Analysis Dashboard</title>
-        
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Bayesian Network Analysis</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                        <a class="nav-link" href="/" >Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" target="_blank" href="https://drive.google.com/file/d/1i4_nSLdjDsN3v2C9XrtV2px3DA2bnJfc/view?usp=sharing">Download Dataset</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        
-        <div class="container">
-            <div class="output-block">
-                <p><strong>Certificate of Deposit:</strong> Deposits of fixed-term issued by banks, providing a specified interest and maturity date; low risk with certificate negotiability unavailable.</p>
-            </div>
-            <div class="output-block">
-                <p><strong>Commercial Paper:</strong> A kind of unsecured promissory notes that are issued by corporations to raise working capital. This has a usual maturity of up to 270 days.</p>
-            </div>
-            <div class="output-block">
-                <p><strong>365-Day Bill Yield (percent):</strong> An annualized yield on a 365-day government treasury bill. This reflects the return as a percentage of face value.</p>
-            </div>
-            <div class="output-block">
-                <p><strong>Loan:</strong> An amount borrowed from banks or other financial institutions at an agreed rate of interest. The amount is repayable over a defined term.</p>
-            </div>
-            <div class="output-block">
-                <p><strong>Fixed Term Deposit (&gt;1 year):</strong> A deposit which has tenured longer than one year, in return offering more lucrative rates with reduced liquidity.</p>
-            </div>
-            <div class="output-block">
-                <p><strong>Saving Deposit:</strong> A deposit account with banking that ascertains interest but makes provision for unlimited access to funds to allow depositors to save more.</p>
-            </div>
-            <div class="output-block">
-                <p><strong>Call Rate (% per annum):</strong> The rate at which banks lend and borrow overnight interbank credit facilities for day-to-day liquidity requirements.</p>
-            </div>
-        </div>
-    </body>
-</html>
+{% extends "base.html" %}
+{% block main %}
+    <div class="output-block">
+        <p><strong>Certificate of Deposit:</strong> Deposits of fixed-term issued by banks, providing a specified interest and maturity date; low risk with certificate negotiability unavailable.</p>
+    </div>
+    <div class="output-block">
+        <p><strong>Commercial Paper:</strong> A kind of unsecured promissory notes that are issued by corporations to raise working capital. This has a usual maturity of up to 270 days.</p>
+    </div>
+    <div class="output-block">
+        <p><strong>365-Day Bill Yield (percent):</strong> An annualized yield on a 365-day government treasury bill. This reflects the return as a percentage of face value.</p>
+    </div>
+    <div class="output-block">
+        <p><strong>Loan:</strong> An amount borrowed from banks or other financial institutions at an agreed rate of interest. The amount is repayable over a defined term.</p>
+    </div>
+    <div class="output-block">
+        <p><strong>Fixed Term Deposit (&gt;1 year):</strong> A deposit which has tenured longer than one year, in return offering more lucrative rates with reduced liquidity.</p>
+    </div>
+    <div class="output-block">
+        <p><strong>Saving Deposit:</strong> A deposit account with banking that ascertains interest but makes provision for unlimited access to funds to allow depositors to save more.</p>
+    </div>
+    <div class="output-block">
+        <p><strong>Call Rate (% per annum):</strong> The rate at which banks lend and borrow overnight interbank credit facilities for day-to-day liquidity requirements.</p>
+    </div>
+{% endblock %}
